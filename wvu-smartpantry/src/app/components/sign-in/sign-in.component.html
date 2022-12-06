@@ -1,0 +1,89 @@
+
+
+<div class="container-fluid " style="background-color: #2b2a2a; font-family: Times New Roman; font-size: 18px; height:100%;" tabindex="0">
+  
+  
+  <div class="row my-auto mx-auto " style="width: 100% ; height: 100px;">
+       
+    <h3 class="text-white my-auto"> WVU - Samrt Pantry Project</h3>
+           
+   </div> 
+ 
+
+<div class="row " style="background-color: #2b2a2a; font-family: Times New Roman; font-size: 18px;" tabindex="0">
+  <div class="col-6 my-auto">
+   
+    
+ 
+      <div class="row  mx-auto  " style="width: 100% ; height: 700px;">
+      
+      
+        <img src="./assets/WVU.png" class="  img-fluid  mx-auto my-auto " style="height:50% ; width: 50% ;" alt="...">
+              
+       
+        
+       
+       
+      </div>  
+      
+  </div>
+
+  <div class="col-6 justify-content-center">
+    <div class="displayTable" style="background-color: #2b2a2a; font-family: Times New Roman; font-size: 18px;" tabindex="0">
+      <div class="displayTableCell" style="background-color: #2b2a2a; font-family: Times New Roman; font-size: 18px;" tabindex="0" >
+        <div class="authBlock" style="background-color: #2b2a2a;">
+          <h3 class = "text-white">Sign In</h3>
+          <div class="formGroup" style="background-color: #2b2a2a; font-family: Times New Roman; font-size: 18px;" tabindex="0">
+            <input
+              type="text"
+              class="formControl"
+              placeholder="Email"
+              #userName
+              required
+            />
+          </div>
+    
+          <div class="formGroup">
+            <input
+              type="password"
+              class="formControl"
+              placeholder="Password"
+              #userPassword
+              required
+            />
+          </div>
+    
+          <!-- Calling SignIn Api from AuthService -->
+          <div class="formGroup">
+            <input
+              type="button"
+              class="btn btn-outline-warning"
+              style="background-color: #e4b123; "
+              value="Log in"
+              (click)="authService.SignIn(userName.value, userPassword.value)"
+            />
+          </div>
+
+          <!-- Calling GoogleAuth Api from AuthService -->
+    
+          <div class="forgotPassword">
+            <span routerLink="/forgot-password" style="color: #e39d10 ; ">Forgot Password?</span>
+          </div>
+        </div>
+    
+
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+

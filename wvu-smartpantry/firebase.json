@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/wvu-smartpantry",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+<app-top-navbar></app-top-navbar>
+
+
+
+
+<h1 class="text-center mb-5 mt-5">My Pantry Items </h1>
+<div class="bg-light mb-0">
+  <div class="container justify-content-center">
+    <div class="container ">
+      <table Id="table-hover" class="tabletable-striped table table-hover background-color-dark text-dark">
+        <thead>
+          <tr>
+
+            <th scope="col">Name</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Expiration Date</th>
+            <th scope="col">Remaining Amount</th>
+
+          </tr>
+        </thead>
+
+        <tbody class=" text-dark" *ngFor="let data of item">
+          <tr>
+
+
+            <td class="text-dark">{{data.A_Name}}</td>
+            <td>{{data.B_Brand}}</td>
+            <td>{{data.C_ExpirationDate}}</td>
+            
+            
+            
+            <div *ngIf="data.D_WeightPercentage[0] == 1 && data.D_WeightPercentage[1] == 0">
+              
+
+              
+
+
+            <td><span class="badge bg-success rounded-pill">{{data.D_WeightPercentage}}</span></td>
+          </div>
+                   
+          <div *ngIf="remainingColor == 'red'">
+
+
+            <td><span class="badge bg-danger rounded-pill">{{data.D_WeightPercentage}}</span></td>
+          </div>
+
+
+          </tr>
+
+
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
