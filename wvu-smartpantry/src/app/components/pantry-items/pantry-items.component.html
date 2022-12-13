@@ -27,24 +27,29 @@
             <td>{{data.B_Brand}}</td>
             <td>{{data.C_ExpirationDate}}</td>
             
+            <ng-template [ngIf]="data.D_WeightPercentage == '0%' || data.D_WeightPercentage == '1%' ||data.D_WeightPercentage == '2%' ||data.D_WeightPercentage == '3%' ||data.D_WeightPercentage == '4%' ||
+            data.D_WeightPercentage == '5%' ||data.D_WeightPercentage == '6%' ||data.D_WeightPercentage == '7%' ||data.D_WeightPercentage == '8%' ||data.D_WeightPercentage == '9%' ||
+            data.D_WeightPercentage == '10%' ||data.D_WeightPercentage == '11%' ||data.D_WeightPercentage == '12%' ||data.D_WeightPercentage == '13%' ||data.D_WeightPercentage == '14%' || 
+            data.D_WeightPercentage == '15%' ||data.D_WeightPercentage == '16%' ||data.D_WeightPercentage == '17%' ||data.D_WeightPercentage == '18%' ||data.D_WeightPercentage == '19%' ||
+            data.D_WeightPercentage == '20%'" [ngIfElse]="loggedOut">
+              <div>
+                <div *ngIf="data.D_WeightPercentage == '0%' || data.D_WeightPercentage == '1%' ||data.D_WeightPercentage == '2%' ||data.D_WeightPercentage == '3%' ||data.D_WeightPercentage == '4%' ||
+                data.D_WeightPercentage == '5%' ||data.D_WeightPercentage == '6%' ||data.D_WeightPercentage == '7%' ||data.D_WeightPercentage == '8%' ||data.D_WeightPercentage == '9%' ||
+                data.D_WeightPercentage == '10%' ||data.D_WeightPercentage == '11%' ||data.D_WeightPercentage == '12%' ||data.D_WeightPercentage == '13%' ||data.D_WeightPercentage == '14%' || 
+                data.D_WeightPercentage == '15%' ||data.D_WeightPercentage == '16%' ||data.D_WeightPercentage == '17%' ||data.D_WeightPercentage == '18%' ||data.D_WeightPercentage == '19%' ||
+                data.D_WeightPercentage == '20%'">
+                  
+                <td><span class="badge bg-danger rounded-pill">{{data.D_WeightPercentage}}</span></td>
+              </div>
+              </div>
+            </ng-template>
             
+            <ng-template #loggedOut>
+              <div>
+                <td><span class="badge bg-success rounded-pill">{{data.D_WeightPercentage}}</span></td>
+              </div>
+            </ng-template>
             
-            <div *ngIf="data.D_WeightPercentage[0] == 1 && data.D_WeightPercentage[1] == 0">
-              
-
-              
-
-
-            <td><span class="badge bg-success rounded-pill">{{data.D_WeightPercentage}}</span></td>
-          </div>
-                   
-          <div *ngIf="remainingColor == 'red'">
-
-
-            <td><span class="badge bg-danger rounded-pill">{{data.D_WeightPercentage}}</span></td>
-          </div>
-
-
           </tr>
 
 
