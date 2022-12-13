@@ -1,15 +1,15 @@
 
 <p *ngIf="myName == undefined">Failed fetching info from remote server </p>
 <div *ngIf="myName != undefined">
-<div class="container-fluid " style="background-color: #2b2a2a;">
+<div class="container-fluid " style="background-color: #2b2a2a; width: auto;">
 
     <div class="row">
         <div class="col-4">
-            <nav class="nav-bar  " style="background-color: #2b2a2a;">
+           
                 <div class="container-fluid " style="background-color: #2b2a2a; height: 72px;">
 
 
-                    <ul class="nav nav-pills  ">
+                    <ul class="nav nav-pills navbar-expand  ">
                         <li class="nav-item ">
                             <a class="nav-link  text-white" routerLink="/dashboard">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -24,17 +24,16 @@
 
                 </div>
 
-            </nav>
         </div>
 
-        <div class="col-4">
-            <nav class="nav-bar  " style="background-color: #2b2a2a;">
-                <div class="container-fluid " style="background-color: #2b2a2a; height: 72px;">
+        <div class="col justify-content-center" style="background-color: #2b2a2a;  ">
+            <nav class="nav-bar navbar-expand  " style="background-color: #2b2a2a; ">
+                <div class="container-fluid justify-content-center" style="background-color: #2b2a2a; height: 100%;">
 
 
-                    <ul class="nav nav-pills  ">
-                        <li class="nav-item ">
-                            <a class="nav-link  text-white" routerLink="/pantry-items" routerLinkActive="active">Pantry
+                    <ul class="nav nav-pills navbar-expand " >
+                        <li class="nav-item  ">
+                            <a class="nav-link  text-white " routerLink="/pantry-items" routerLinkActive="active">Pantry
                                 Items</a>
                         </li>
                         <li class="nav-item">
@@ -60,13 +59,13 @@
 
         </div>
         <div class="col-4">
-            <nav class="nav-bar text-white " style="background-color: #2b2a2a;">
+        
                 <div class="container-fluid " style="background-color: #2b2a2a; height: 72px;">
 
 
-                    <ul class="nav nav-pills  justify-content-end ">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" type="button" id="dropdownMenuButton1"
+                    <ul class="nav nav-pills  navbar-expand justify-content-end ">
+                        <li class="nav-item ">
+                            <a class="nav-link  text-white" type="button" id="dropdownMenuButton1"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                                 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
@@ -82,11 +81,7 @@
                                     {{myName}}</span>
                             
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item">Logout</a></li>
-                                <li><a class="dropdown-item">Another action</a></li>
-
-                            </ul>
+    
 
 
 
@@ -98,7 +93,7 @@
 
                 </div>
 
-            </nav>
+           
 
 
 
