@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/wvu-smartpantry",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
