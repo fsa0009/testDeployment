@@ -19,7 +19,3 @@ jobs:
       
         with:
           FIREBASE_TOKEN: ${ secrets.FIREBASE_SECRET }}
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SMARTFRIDGEAPP_WVU }}'
-          channelId: live
-          projectId: smartfridgeapp-wvu
