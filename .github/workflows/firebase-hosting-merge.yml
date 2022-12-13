@@ -18,4 +18,4 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
       
         with:
-          FIREBASE_TOKEN: ${ secrets.FIREBASE_SECRET }}
+          github_token: ${ secrets.FIREBASE_SECRET }}
