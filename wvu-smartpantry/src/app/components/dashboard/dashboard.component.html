@@ -11,8 +11,9 @@
   <img class="brand-logo " src="assets/WVU.png" style="height: 60px ; width:60px;" >
 </div>
 <div class="col-8 ">
-      <h5 class="text-warning  my-auto ">WVU-Smart Pantry Project</h5>
+      <h5 class="text-warning  my-auto ">WVU-Smart Pantry</h5>
     </div>
+
 </div>
  
 </nav>
@@ -58,24 +59,58 @@
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
       <div class="inner-adjust">
 
-        <div class="pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">User Profile</h1>
+
+
+        <div class="row" *ngIf="authService.userData as user">
+
+          <div class="col-md-4">
+ 
+          </div>
+          <div class="col-md-4">
+
+            <div class="pt-3 pb-2 mb-3 border-bottom justify-cntent-center">
+              <h1 class="h2 justify-cntent-center">The Smart Pantry Project</h1>
+            </div>
+
+
+             
+
+
+          </div>
+          <div class="col-md-4">
+            
+          </div>
+
+
         </div>
         <!-- Show user data when logged in -->
         <div class="row" *ngIf="authService.userData as user">
-          <div class="col-md-12">
-            <div class="media">
-              <img class="align-self-start mr-5 img-thumbnail rounded-circle" src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"
-                alt="{{user.displayName}}">
-              <div class="media-body">
-                <h1>Hello: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1>
-                <p>User ID: <strong>{{user.uid}}</strong></p>
-                <p>Email: <strong>{{user.email}}</strong></p>
-                <p>Email Verified: <strong>{{user.emailVerified}}</strong></p>
+
+          <div class="col-md-2">
+ 
+          </div>
+          <div class="col-md-8">
+
+              <img class="align-self-start mr-5 img-thumbnail " src="assets/PantryFinal.jpg" style="height: 400px; width: 2000px;">
+              <div class="media-body mt-3">
+                The smart pantry system has mutltiple componentes conncted to each other such as load cells to measure weight , a barcode scanner, and a touch screen. The load cells keep track of the amount remaining of each item. 
+                The resident is notified that certain items are running low. 
+                The barcode scanner obtains information about each item such as item name and brand. 
+                The touch screen displays all the items in the pantry and a suggested shopping list.
+                Also, the shopping list is synced to a web app that can be accessed anywhere and anytime on smart devices.
+                Whenever an items weight is below 20% of the original weight an item is running low it will be marked in red.
               </div>
              
-            </div>
+
+
           </div>
+          <div class="col-md-2">
+            
+          </div>
+
+
+
+
         </div>
 
       </div>

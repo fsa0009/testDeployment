@@ -1,35 +1,247 @@
-
-
 <app-top-navbar></app-top-navbar>
+
 
 
 <div class="container-fluid" style="width: 80%;">
   <h1 class="text-center mb-5 mt-5">My Recipes </h1>
-<div class="card-group justify-content-center" >
+  <div class="card-group justify-content-center">
 
-  
-  <div class="cards border border-dark border-2 me-4 mb-5"  *ngFor="let data of recipe" style="width: 24rem;">
-    <img src="{{data.G_ImagePath}}" class="card-img-top" alt="..." style="height:350px ; width:378px; ">
-    <div class="card-body justify-content-center">
-      <h3 class="card-num text-center fw-bold">{{data.A_RecipeName}}</h3>
-      <p class="card-title text-center"> Calories: {{data.D_Calories}} Cal</p>
-      <p class="card-title text-center"> Coocking Time: {{data.C_CookingTime}} mins</p>
-      <p class="card-title text-center"> Servings: {{data.E_Servings}} servings</p>
-      
-      <a href="#" class="visually-hidden-focusable stretched-link text-center" >mk</a>
-     
-      <div class="d-grid gap-2">
-        <button class="btn btn-warning" type="button" routerLink="">View Recipe</button>
+    <div class="cards border border-dark border-2 me-4 mb-5"  style="width: 24rem;">
+      <img src="./assets/PanCakes.png" class="card-img-top" alt="..." style="height:350px ; width:378px; ">
+      <div class="card-body justify-content-center">
+        <h3 class="card-num text-center fw-bold">Pancakes</h3>
+        <p class="card-title text-center"> Calories: 175 Cal</p>
+        <p class="card-title text-center"> Coocking Time: 20 mins</p>
+        <p class="card-title text-center"> Servings: 8 servings</p>
+
+        <a href="#" class="visually-hidden-focusable stretched-link text-center">mk</a>
+
+
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#R1">
+            View Recipe
+          </button>
+
+
+        </div>
       </div>
-      
+    </div>
+
+    <div class="cards border border-dark border-2 me-4 mb-5"  style="width: 24rem;">
+      <img src="./assets/GrilledCheese.jpg" class="card-img-top" alt="..." style="height:350px ; width:378px; ">
+      <div class="card-body justify-content-center">
+        <h3 class="card-num text-center fw-bold">Grilled Cheese Sandwich
+        </h3>
+        <p class="card-title text-center"> Calories: 290 Cal</p>
+        <p class="card-title text-center"> Coocking Time: 5 mins</p>
+        <p class="card-title text-center"> Servings: 1 servings</p>
+
+        <a href="#" class="visually-hidden-focusable stretched-link text-center">mk</a>
+
+
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#R2">
+            View Recipe
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="cards border border-dark border-2 me-4 mb-5"  style="width: 24rem;">
+      <img src="./assets/FrenchToast.jpg" class="card-img-top" alt="..." style="height:350px ; width:378px; ">
+      <div class="card-body justify-content-center">
+        <h3 class="card-num text-center fw-bold">French Toast
+        </h3>
+        <p class="card-title text-center"> Calories: 149 Cal</p>
+        <p class="card-title text-center"> Coocking Time: 15 mins</p>
+        <p class="card-title text-center"> Servings: 3 servings</p>
+
+        <a href="#" class="visually-hidden-focusable stretched-link text-center">mk</a>
+
+
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#R3">
+            View Recipe
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="cards border border-dark border-2 me-4 mb-5"  style="width: 24rem;">
+      <img src="./assets/Waffles.jpg" class="card-img-top" alt="..." style="height:350px ; width:378px; ">
+      <div class="card-body justify-content-center">
+        <h3 class="card-num text-center fw-bold">Waffles
+        </h3>
+        <p class="card-title text-center"> Calories: 220 Cal</p>
+        <p class="card-title text-center"> Coocking Time: 25 mins</p>
+        <p class="card-title text-center"> Servings: 6 servings</p>
+
+        <a href="#" class="visually-hidden-focusable stretched-link text-center">mk</a>
+
+
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#R4">
+            View Recipe
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="cards border border-dark border-2 me-4 mb-5"  style="width: 24rem;">
+      <img src="./assets/Crepes.jpg" class="card-img-top" alt="..." style="height:350px ; width:378px; ">
+      <div class="card-body justify-content-center">
+        <h3 class="card-num text-center fw-bold">Crepes
+        </h3>
+        <p class="card-title text-center"> Calories: 280 Cal</p>
+        <p class="card-title text-center"> Coocking Time: 30 mins</p>
+        <p class="card-title text-center"> Servings: 4 servings</p>
+
+        <a href="#" class="visually-hidden-focusable stretched-link text-center">mk</a>
+
+
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#R4">
+            View Recipe
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="cards border border-dark border-2 me-4 mb-5"  style="width: 24rem;">
+      <img src="./assets/HashBrowns.jpg" class="card-img-top" alt="..." style="height:350px ; width:378px; ">
+      <div class="card-body justify-content-center">
+        <h3 class="card-num text-center fw-bold">Hash Browns
+        </h3>
+        <p class="card-title text-center"> Calories: 470 Cal</p>
+        <p class="card-title text-center"> Coocking Time: 35 mins</p>
+        <p class="card-title text-center"> Servings: 4 servings</p>
+
+        <a href="#" class="visually-hidden-focusable stretched-link text-center">mk</a>
+
+
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#R4">
+            View Recipe
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="modal fade" id="R1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pancakes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          1. In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center
+          and pour in the milk, egg and melted butter; mix until smooth.2. Heat a lightly oiled griddle or
+          frying pan over medium-high heat. Pour or scoop the batter onto the griddle, using approximately 1/4
+          cup for each pancake. Brown on both sides and serve hot.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
   </div>
+
+  <div class="modal fade" id="R2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Grilled Cheese Sandwich</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          1. Butter the toast – spread 1/2 Tbsp butter on one side of each slice of bread.2. Heat skillet – place a skillet over low to medium/low heat. A griddle should be at 275˚F. Immediately add 2 slices of bread      with the butter-side-down.3. Add cheese – stack cheeses on one of the pieces of bread, cover with the other piece of toast and flip the sandwich over.4. Brown the toast – Continue sauteeing, flipping once, until both sides are golden brown and cheese is melted.5. Serve – cut the sandwich in half on the diagonal to serve.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="R3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">French Toast</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          1. Whisk milk, eggs, vanilla, cinnamon, and salt together in a shallow bowl.2. Lightly butter a griddle and heat over medium-high heat.3. Dunk bread in the egg mixture, soaking both sides. 4. Transfer to the hot skillet and cook until golden, 3 to 4 minutes per side. Serve hot.        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="R4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Waffles</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          1. Preheat a waffle iron according to manufacturer's instructions.2. Whisk eggs in a large bowl until light and fluffy. Add flour, milk, and vegetable oil and mix to combine. 3. Whisk in sugar, then mix in baking powder, salt, and vanilla just until smooth, being careful not to overmix.4. Spray the preheated waffle iron with nonstick spray. Pour batter onto into the hot waffle iron and cook until golden brown    and the iron stops steaming, 3 to 5 minutes. Repeat to cook remaining waffles.        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   
+  <div class="modal fade" id="R5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Crepes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          1. In a large mixing bowl, whisk together the flour and the eggs. Gradually add in the milk and water, stirring to combine. Add the salt and butter; beat until smooth.2. Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each crepe. Tilt the pan with a circular motion so that the batter coats the surface evenly.3. Cook the crepe for about 2 minutes, until the bottom is light brown. Loosen with a spatula, turn and cook the other side. Serve hot.
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</div>
 
-</div>
-
-
-
-
+  
+  <div class="modal fade" id="R6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hash Browns</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          1. Rinse shredded potatoes until water is clear, then drain and squeeze dry. Place shreds in a bowl and mix in the onion, flour, and egg until evenly distributed.2. Heat about 1/4 inch of oil in a large heavy skillet over medium-high heat. When oil is sizzling hot, place potatoes into the pan in a 1/2 inch thick layer. Cover the whole bottom of the pan, or make separate piles like pancakes.3. Cook until nicely browned on the bottom, then flip over and brown on the other side. It should take at least 5 minutes per side. If you are cooking them in one big piece, it can be cut into quarters for easier flipping.4. Remove from pan, and drain on paper towels. Season with salt and pepper and serve immediately.          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
